@@ -12,6 +12,7 @@ const bookSchema = new Schema<IBook>({
     required: [true, "Author must be provided"],
   },
   genre: {
+    type: String,
     enum: [
       "FICTION",
       "NON_FICTION",
